@@ -16,14 +16,10 @@
         ['B1', 'B2', 'B3'],
         ['C1', 'C2', 'C3'],];
 
-        sampleArrayA.push(['D1', 'D2', 'D3']);    
-
-        sampleArrayA.sort(function(first,second){
-            if(first>second){
-                return -1;
-            }
-        });
+        // sampleArrayA.push(['D1', 'D2', 'D3']);
         
+        sampleArrayA.reverse()
+
     var sampleArrayB = sampleArrayA.reduce(toOneDimension);
     for(var counterVar = 0; counterVar < sampleArrayB.length; counterVar++){
         document.write('sampleArrayB['+counterVar+']:');
@@ -32,7 +28,7 @@
         }
 
         console.log(sampleArrayA);
-
+        console.log(sampleArrayB);
     </script>  
 </body>
 </html>
