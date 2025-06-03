@@ -14,21 +14,22 @@
     var sampleArrayA = [
         ['A1', 'A2', 'A3'],
         ['B1', 'B2', 'B3'],
-        ['C1', 'C2', 'C3'],];
+        ['C1', 'C2', 'C3']];
 
-        // sampleArrayA.push(['D1', 'D2', 'D3']);
-        
-        sampleArrayA.reverse()
+    var sampleArrayC = sampleArrayA.slice().reverse();
 
-    var sampleArrayB = sampleArrayA.reduce(toOneDimension);
+        // sampleArrayC.push(['D1', 'D2', 'D3']);
+
+    var sampleArrayB = sampleArrayC.reduce(toOneDimension);
     for(var counterVar = 0; counterVar < sampleArrayB.length; counterVar++){
         document.write('sampleArrayB['+counterVar+']:');
         document.write(sampleArrayB[counterVar]);
         document.write('<br/>');
         }
 
-        console.log(sampleArrayA);
-        console.log(sampleArrayB);
+        console.table(sampleArrayA);
+        console.table(sampleArrayC);
+        console.table(sampleArrayB);
     </script>  
 </body>
 </html>
