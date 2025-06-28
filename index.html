@@ -9,10 +9,16 @@
     <script type="text/javascript">
         function toOneDimension(previousValue, currentValue){
             // console.log(toOneDimension);
-            console.log(previousValue);
-            console.log(currentValue);
+            // console.log(previousValue);
+            // console.log(currentValue);
+            console.trace(previousValue);
+            console.trace(currentValue);
             // return previousValue.concat(currentValue);
             return currentValue.concat(previousValue);
+            //return文は、その行で関数の実行を終了させ、指定した値を返す。
+            //return currentValue.concat(previousValue);を実行した後は処理が終わるため、下に書かれたconsole.log()は実行されない。
+            console.log(previousValue);
+            console.log(currentValue);
         }
 
         var sampleArrayA = [
